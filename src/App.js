@@ -3,15 +3,16 @@ import './App.css'
 import LandingPage from './Pages/LandingPage'
 import NavbarComponent from './components/navbar/NavbarComponent'
 import FooterComponent from './components/footer/FooterComponent'
+import LSN02 from './components/headline';
 
 export default function App() {
-	return (
-		<>
+  return (
+    <>
       <NavbarComponent />
-        <main>
-          <h1 className='text-center fw-bold my-5'>CONTENT</h1>
-        </main>
-			<FooterComponent />
+      <main>
+        <LSN02 />
+      </main>
+      <FooterComponent />
     </>
-	)
+  )
 }

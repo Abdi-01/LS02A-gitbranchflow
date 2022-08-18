@@ -1,12 +1,9 @@
 import React from "react";
 import axios from "axios";
-import { position } from "@chakra-ui/react";
 
 const API_URL = "https://newsapi.org/v2";
 
 const LSN02 = (props) => {
-
-    const [newsData, setNewsData] = React.useState([]);
     const [headNews, setHeadNews] = React.useState({});
     const [headSource, setHeadSource] = React.useState("");
     const [headPublished, setHeadPublished] = React.useState("");
@@ -25,14 +22,11 @@ const LSN02 = (props) => {
                     'Authorization': 'Bearer 82e0f058301e44c59c795c4425728677'
                 }
             });
-            console.log(getRes.data);
-            setNewsData(getRes.data.articles);
 
             const randomIdx = Math.floor(Math.random() * getRes.data.articles.length);
-
             const item = getRes.data.articles[randomIdx];
-
-            console.log(item.source.name)
+            
+            //console.log(item.source.name)
             setHeadNews(item);
             setHeadSource(item.source.name);
             setHeadPublished(item.publishedAt.split("T")[0]);

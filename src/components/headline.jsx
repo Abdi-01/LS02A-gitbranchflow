@@ -72,10 +72,14 @@ const LSN02 = (props) => {
     const printBottomNews = () => {
         return bottomNews.map((val, idx) => {
             return (
-                <div key={idx}>
-                    <div className="d-flex">
-                    <img src={val.urlToImage} style={{width: "150px"}}/>
-
+                <div key={idx} style={{ maxWidth: "200px" }}>
+                    <img src={val.urlToImage} style={{ width: "200px", height: "125px" }} />
+                    <div className="px-2">
+                        <div className="d-flex justify-content-between">
+                            <span className="text-muted" style={{ fontSize: "12px" }}>{val.publishedAt.split("T")[0]}</span>
+                            <span className="text-muted" style={{ fontSize: "12px" }}>10 min read</span>
+                        </div>
+                        <p style={{ fontSize: "13px", fontWeight: "700" }}>{val.title}</p>
                     </div>
                 </div>
             )
@@ -83,8 +87,8 @@ const LSN02 = (props) => {
     };
 
     return (
-        <div className="border container">
-            <div className="border row m-0">
+        <div className="container">
+            <div className="row m-0">
                 <div className="col-8">
                     <div className="w-100">
                         <span className="text-white p-1 fw-bold" style={{ backgroundColor: "red", position: "absolute", zIndex: "3" }}>Featured Story</span>
@@ -111,10 +115,10 @@ const LSN02 = (props) => {
                     {printSideNews()}
                 </div>
             </div>
-            <div className="border row m-0">
-                <div className="p-2 ">
+            <div className="row m-0">
+                <div className="p-2">
                     <span className="fw-bold fs-5">Top Stories</span>
-                    <div>
+                    <div className="mt-2 d-flex justify-content-between">
                         {printBottomNews()}
                     </div>
                 </div>

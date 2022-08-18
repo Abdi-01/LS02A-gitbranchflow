@@ -3,7 +3,7 @@ import axios from 'axios';
 import {Text,Avatar,Image, Divider} from '@chakra-ui/react'
 import { BiBookmark, BiDotsHorizontalRounded } from 'react-icons/bi';
 
-const LSN03 = () => {
+const LeftSideCard = () => {
 
   const[newsData, setNewsData]=useState([])
 
@@ -65,10 +65,9 @@ const printData = ()=>{
           <Text className='fw-bold mb-3' fontSize={'lg'}>Top Stories</Text>
           {printData()}
         </div>
-        <div className='col-4'>Kanan</div>
       </div>
     </div>
   )
 }
 
-export default LSN03
+export default LeftSideCard

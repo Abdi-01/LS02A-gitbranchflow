@@ -1,11 +1,10 @@
 import React from 'react';
-import LSN03 from './Components/LSN03.jsx';
+import LeftSideCard from './Components/LeftSideBar';
 
 function App() {
   return (
     <div >
-      <LSN03/>
-
+      <LeftSideCard/>
     </div>
   );
 }

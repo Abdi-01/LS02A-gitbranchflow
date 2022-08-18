@@ -44,16 +44,16 @@ export default function FooterComponent() {
 							234-5825852763 <br />
 						</Text>
                   <div className='mt-4'>
-                     <div className='text-secondary d-inline p-1' style={{border: '1px solid rgb(166,167,171)', borderRadius: '45px'}}>
+                     <div className='text-secondary d-inline' style={{padding: '7.5px 10px', border: '1px solid rgb(166,167,171)', borderRadius: '50px'}}>
                         <FaFacebookF size={15} className='d-inline'/>
                      </div>
-                     <div className='text-secondary d-inline ms-2 p-1' style={{border: '1px solid rgb(166,167,171)', borderRadius: '45px'}}>
+                     <div className='text-secondary d-inline ms-2' style={{padding: '7.5px 10px', border: '1px solid rgb(166,167,171)', borderRadius: '45px'}}>
                         <FaTwitter size={15} className='d-inline'/>
                      </div>
-                     <div className='text-secondary d-inline ms-2 p-1' style={{backgroundColor: 'rgb(254,114,35)', border: '1px solid rgb(254,114,35)', borderRadius: '45px'}}>
+                     <div className='text-secondary d-inline ms-2' style={{padding: '7.5px 10px', backgroundColor: 'rgb(254,114,35)', border: '1px solid rgb(254,114,35)', borderRadius: '45px'}}>
                         <RiInstagramFill size={15} className='d-inline' color='white'/>
                      </div>
-                     <div className='text-secondary d-inline ms-2 p-1' style={{border: '1px solid rgb(166,167,171)', borderRadius: '45px'}}>
+                     <div className='text-secondary d-inline ms-2' style={{padding: '7.5px 10px', border: '1px solid rgb(166,167,171)', borderRadius: '45px'}}>
                         <FaLinkedinIn size={15} className='d-inline'/>
                      </div>
                   </div>

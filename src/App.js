@@ -1,10 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import LSN04 from './Components/LSN04'
+import RightSideBar from './Components/RightSideBar';
 function App() {
   return (
     <div className="App">
-   <LSN04/>
+   <RightSideBar/>
     </div>
   );
 }

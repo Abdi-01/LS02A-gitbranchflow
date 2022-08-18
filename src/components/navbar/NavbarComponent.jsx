@@ -13,7 +13,7 @@ export default function NavbarComponent() {
 
 	return (
       <>
-         <div className='row m-auto p-2' style={{ backgroundColor: 'rgb(240,244,247)'}}>
+         <div className='row m-auto p-2' style={{ backgroundColor: 'rgb(240,244,247)', overflowX: 'hidden'}}>
             <div className='col-10'>
                <Text fontSize='xs' style={{fontWeight: 500}} className='d-inline'>
                   Follow us:
@@ -62,7 +62,7 @@ export default function NavbarComponent() {
          </div>
 
          <div className='row m-auto py-1' style={{ backgroundColor: 'rgb(255,252,228)'}}>
-            <div className='col-12 p-1' style={{marginLeft: '10vw'}}>
+            <div className='col-5 p-1' style={{marginLeft: '10vw'}}>
                <div className='d-inline'>
                   <AiOutlineInfoCircle className='d-inline' size={20}/>
                </div> 

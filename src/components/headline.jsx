@@ -3,7 +3,7 @@ import axios from "axios";
 
 const API_URL = "https://newsapi.org/v2";
 
-const LSN02 = (props) => {
+const Headline = (props) => {
     const [headNews, setHeadNews] = React.useState({});
     const [headSource, setHeadSource] = React.useState("");
     const [headPublished, setHeadPublished] = React.useState("");
@@ -121,4 +121,4 @@ const LSN02 = (props) => {
     )
 };
 
-export default LSN02;
+export default Headline;
